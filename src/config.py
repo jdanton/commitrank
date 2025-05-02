@@ -12,8 +12,15 @@ APP_NAME = "CommitRank"
 APP_VERSION = "1.0.0"
 DEBUG_MODE = os.getenv("DEBUG_MODE", "False").lower() == "true"
 
-# API keys and secrets
-GITHUB_API_KEY = os.getenv("GITHUB_API_KEY", "")
+# GitHub configuration
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
+GITHUB_ORG = os.getenv("GITHUB_ORG", "")
+GITHUB_REPO = os.getenv("GITHUB_REPO", "")
+
+# Azure OpenAI configuration
+AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY", "")
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "")
+AZURE_OPENAI_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT", "")
 AZURE_CONNECTION_STRING = os.getenv("AZURE_CONNECTION_STRING", "")
 
 # Database configuration
