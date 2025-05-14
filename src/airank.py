@@ -20,9 +20,9 @@ logger = logging.getLogger('azure_openai')
 load_dotenv()
 
 # Best practice: Get configuration from environment variables or use defaults
-endpoint = os.getenv("AZURE_OPENAI_ENDPOINT", "https://joey-ma5dicct-eastus2.openai.azure.com/")
+endpoint = os.getenv("AZURE_OPENAI_ENDPOINT", "API_ENDPOINT")
 deployment = os.getenv("AZURE_OPENAI_DEPLOYMENT", "gpt-4.1")
-api_key = os.getenv("AZURE_OPENAI_API_KEY", "2C23MATrbnuqThzWwYZw56whDuG5FaJ8rlDPJMOQN9wowoFDrij2JQQJ99BEACHYHv6XJ3w3AAAAACOGX9t")
+api_key = os.getenv("AZURE_OPENAI_API_KEY", "InsertyourAPIKeyHeret")
 
 # Best practice: Use a stable API version
 api_version = "2023-07-01-preview"  # More stable version than preview versions
